@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - MadeIn30AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1 class="logo">MadeIn30AI</h1>
+    <nav>
+      <a href="projects.html">projects</a>
+      <a href="about.html">About</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><i data-feather="moon"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About</h2>
+    <section class="about-grid">
+      <div class="bio">
+        <h3>About MadeIn30AI</h3>
+        <p>
+          <strong>MadeIn30AI</strong> is a creative initiative that highlights what can be achieved using artificial intelligence in just 30 minutes. Each project is conceptualized and executed with mobile-first tools and AI-driven workflows, demonstrating that powerful results are possible with minimal time and accessible technology.
+        </p>
+        <p>
+          From logo design to content creation and web development, MadeIn30AI combines speed, innovation, and creativity to deliver real-world solutions—all crafted with AI, often from a mobile device.
+        </p>
+      </div>
+
+      <div class="developer-info">
+        <h3>About the Developer</h3>
+        <ul>
+          <li><strong>Full Name:</strong> Majd Kamar</li>
+          <li><strong>Birth Date:</strong> March 14, 2000</li>
+          <li><strong>Location:</strong> Damascus, Syria</li>
+          <li><strong>Academic Background:</strong> B.Sc. in Information Technology</li>
+          <li><strong>University:</strong> Damascus University</li>
+          <li><strong>Specialization:</strong> Software Engineering</li>
+          <li><strong>Expertise:</strong> Web & Mobile Application Development</li>
+          <li><strong>Interests:</strong> AI-powered rapid prototyping using mobile tools</li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact & Social Media</h3>
+        <div class="contact-item">
+          <i data-feather="mail"></i>
+          <a href="mailto:eng.majd.kamar@gmail.com">eng.majd.kamar@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i data-feather="message-circle"></i>
+          <a href="https://wa.me/936544218">+963 936 544 218 (WhatsApp)</a>
+        </div>
+        <div class="contact-item">
+          <i data-feather="instagram"></i>
+          <a href="https://www.instagram.com/madein30ai">@madein30ai</a>
+        </div>
+        <div class="contact-item">
+          <i data-feather="linkedin"></i>
+          <a href="https://www.linkedin.com/in/majd-kammar-566a8219b">Majd Kamar</a>
+        </div>
+        <div class="contact-item">
+          <i data-feather="facebook"></i>
+          <a href="https://www.facebook.com/share/14qeNzTpsa/">MadeIn30AI on Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MadeIn30AI — Built in under 30 minutes using AI tools.</p>
+  </footer>
+
+  <script>
+    feather.replace();
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", currentTheme === "light" ? "dark" : "light");
+    }
+
+    // Default to dark theme
+    document.documentElement.setAttribute("data-theme", "dark");
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details - MadeIn30AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1 class="logo">MadeIn30AI</h1>
+    <nav>
+      <a href="projects.html">projects</a>
+      <a href="about.html">About</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><i data-feather="moon"></i></button>
+    </nav>
+  </header>
+
+  <main class="project-details-container">
+    <h2>AI Logo Generator</h2>
+<div >
+      <div class="project-main">
+        <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=360" alt="AI Logo Generator" class="project-image-large">
+        <p class="project-description">
+          The AI Logo Generator is a creative tool designed to produce unique logo concepts within seconds using generative AI models. It allows users to input keywords and style preferences and generates logo mockups accordingly.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-block">
+          <h3><i data-feather="clock"></i> Time Used</h3>
+          <div class="digital-clock">00:28:45</div>
+        </div>
+
+        <div class="meta-block">
+          <h3><i data-feather="tool"></i> Tools Used</h3>
+          <ul class="tools-list">
+            <li><a href="https://openai.com" target="_blank"><i data-feather="zap"></i> ChatGPT</a></li>
+            <li><a href="https://www.canva.com/" target="_blank"><i data-feather="image"></i> Canva</a></li>
+            <li><a href="https://code.visualstudio.com/" target="_blank"><i data-feather="code"></i> VS Code</a></li>
+          </ul>
+        </div>
+
+        <div class="meta-block">
+          <h3><i data-feather="info"></i> Project Details</h3>
+          <ul>
+            <li><strong>Category:</strong> Design Automation</li>
+            <li><strong>Type:</strong> AI Generated Content</li>
+            <li><strong>Complexity:</strong> Beginner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MadeIn30AI — Built in under 30 minutes using AI tools.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", currentTheme === "light" ? "dark" : "light");
+    }
+    document.documentElement.setAttribute("data-theme", "dark");
+    feather.replace();
+  </script>
+</body>
+</html>
